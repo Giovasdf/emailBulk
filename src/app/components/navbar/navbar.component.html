@@ -1,0 +1,38 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://i.ibb.co/HBhfMtY/1.png" width="112" height="28" />
+    </a>
+
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item"> Home </a>
+      <!--Button Add Client-->
+      <a class="navbar-item"> Add Client </a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  $(document).ready(function () {
+    // Check for click events on the navbar burger icon
+    $(".navbar-burger").click(function () {
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-burger").toggleClass("is-active");
+      $(".navbar-menu").toggleClass("is-active");
+    });
+  });
+</script>
