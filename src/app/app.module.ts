@@ -7,12 +7,14 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TableComponent } from './components/table/table.component';
 
+import { AddClientComponent } from './forms/add-client/add-client.component';
 @NgModule({
   declarations: [
     AppComponent,
     MainMenuComponent,
     NavbarComponent,
-    TableComponent
+    TableComponent,
+    AddClientComponent
   ],
   imports: [
     BrowserModule,
