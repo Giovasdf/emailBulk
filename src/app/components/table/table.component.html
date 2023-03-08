@@ -1,6 +1,7 @@
 <table class="table">
   <thead>
     <tr>
+      <th><abbr title="Selected">Selected</abbr></th>
       <th><abbr title="Name">Name</abbr></th>
       <th><abbr title="LastName">LastName</abbr></th>
       <th><abbr title="Email">Email</abbr></th>
@@ -10,6 +11,7 @@
   </thead>
   <tfoot>
     <tr>
+      <th><abbr title="Selected">Selected</abbr></th>
       <th><abbr title="Name">Name</abbr></th>
       <th><abbr title="LastName">LastName</abbr></th>
       <th><abbr title="Email">Email</abbr></th>
@@ -19,6 +21,12 @@
   </tfoot>
   <tbody>
     <tr>
+      <!--formControlName="codigo"-->
+      <td>
+        <label class="checkbox">
+          <input type="checkbox" formControlName="clientId" />
+        </label>
+      </td>
       <td>John</td>
       <td>Doe</td>
       <td>john.doe@gmail.com</td>

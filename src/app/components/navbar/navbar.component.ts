@@ -3,14 +3,16 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
+  constructor(private router: Router) {}
 
-  
-  constructor(private router:Router) { }
+  goToAddClient() {
+    this.router.navigate(['add-client']);
+  }
 
-
-  goToAddClient(){
+  goToHome() {
+    this.router.navigate(['']);
   }
 }
